@@ -66,4 +66,4 @@ playlists...
 
 You can get more information through the man page of mpg123:
 
-`man 1 mpg123`
+`$ man 1 mpg123`

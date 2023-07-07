@@ -1,0 +1,22 @@
+#!/bin/sh
+
+
+M3UPATH="insert the path of your .m3u files here"
+
+if  [ $# -eq 1 ] &&
+    [ ! $1 = "-h" ] &&
+    [ ! $1 = "--help" ]
+then
+    mpg123 -@ "$M3UPATH/$1.m3u"
+# replace the command 'mpg123' above with 'mpg123-pulse'
+# if the pulseaudio gives an error
+else
+  echo "USAGE: focus [PLAYLIST]"
+  echo ""
+  echo "Available playlists:"
+  echo ""
+  for file in $(ls "$M3UPATH/" | sed 's/.m3u//g'); do
+    printf "$file  "
+  done
+  printf "\n"
+fi

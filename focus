@@ -16,7 +16,7 @@ else
   echo "Available playlists:"
   echo ""
   for file in $(ls "$M3UPATH/" | sed 's/.m3u//g'); do
-    printf "$file  "
+    printf "  $file"
   done
   printf "\n"
 fi

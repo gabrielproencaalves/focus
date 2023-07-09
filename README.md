@@ -18,7 +18,7 @@ Or, by a [.zip file](https://github.com/gabrielproencaalves/focus/archive/refs/h
 
 ### 2. Configuring focus
 
-After downloading, you can choose a folder to store the extracted m3u files, and then edit the `focus` file as follows:
+After downloading, you can choose a folder to store the extracted m3u files (located inside the directory 'm3u files'), and then edit the `focus` file as follows:
 
 1. Insert the 'path' of the newly saved m3u files into the 'M3UPATH' variable. For example:
 
